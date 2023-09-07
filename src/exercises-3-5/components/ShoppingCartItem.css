@@ -1,0 +1,11 @@
+.shoppingCartItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;  
+}
