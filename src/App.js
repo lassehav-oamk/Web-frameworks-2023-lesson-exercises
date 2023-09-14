@@ -9,6 +9,8 @@ import Exercise5_1 from "./exercise-5-1/Exercise5_1";
 import Exercise5_4 from "./exercise-5-4/Exercise5_4";
 import Exercise6_1 from "./exercise-6-1/Exercise6_1";
 import Exercise6_2 from "./exercise-6-2/Exercise6_2";
+import Exercise7_1 from "./exercise-7-1/Exercise7_1";
+import Exercise6_3 from "./exercise-6-3/Exercise6_3";
 
 function App() {
   /*
@@ -21,10 +23,11 @@ function App() {
       <LevelTest />
       <Exercise5_4 />
       <Exercise6_1 />
+      <Exercise6_2 />
   */
   return (
     <div className="App">
-      <Exercise6_2 />
+      <Exercise6_3 />
     </div>
   );
 }
