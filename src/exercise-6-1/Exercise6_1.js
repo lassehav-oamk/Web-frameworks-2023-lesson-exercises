@@ -3,7 +3,7 @@ import MainCourses from "./MainCourses";
 import Drinks from "./Drinks";
 import styles from "./HorizontalMenu.module.css";
 
-export default function () {
+export default function Exercise6_1() {
   return (
     <div>
       <h1>Exercise 6.1</h1>
