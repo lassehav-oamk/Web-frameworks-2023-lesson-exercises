@@ -16,6 +16,9 @@ import Exercise8_1 from "./exercise-8-1/Exercise8_1";
 import Exercise9_2 from "./exercise-9-2/Exercise9_2";
 import Exercise8_3 from "./exercise-8-3/Exercise8_3";
 import Exercise9_1 from "./exercise-9-1/Exercise9_1";
+import Exercise10_2 from "./exercise-10-2-class-demo/Exercise10_2";
+import Exercise10_3 from "./exercise-10-3-completed/Exercise10_3";
+import Exercise10_1 from "./exercise-10-1/Exercise10_1";
 
 function App() {
 
@@ -33,10 +36,13 @@ function App() {
       <Exercise6_3_LessonDemo />
       <Exercise9_2 />
       <Exercise8_3 />
+      <Exercise9_2 />
+      <Exercise10_2 />
+      <Exercise10_1 />
   */
   return (
     <div className="App">
-      <Exercise9_2 />
+      <Exercise10_2 />
     </div>
   );
 }
