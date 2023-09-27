@@ -19,6 +19,7 @@ import Exercise9_1 from "./exercise-9-1/Exercise9_1";
 import Exercise10_2 from "./exercise-10-2-class-demo/Exercise10_2";
 import Exercise10_3 from "./exercise-10-3-completed/Exercise10_3";
 import Exercise10_1 from "./exercise-10-1/Exercise10_1";
+import Exercise10_2b from "./exercise-10-2b/Exercise10_2b";
 
 function App() {
 
@@ -39,10 +40,11 @@ function App() {
       <Exercise9_2 />
       <Exercise10_2 />
       <Exercise10_1 />
+      <Exercise10_2 />
   */
   return (
     <div className="App">
-      <Exercise10_2 />
+      <Exercise10_2b />
     </div>
   );
 }
