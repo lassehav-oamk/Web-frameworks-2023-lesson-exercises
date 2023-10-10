@@ -4,6 +4,7 @@ const app = express()
 const port = 3001
 const mysql = require('mysql2/promise');
 
+app.use(express.json()) // for parsing application/json
 app.use(cors());
 
 async function main() {
@@ -18,7 +19,14 @@ async function main() {
   })
 
   // route to adding new customer tire set
-  app.post('/tiresets', (req, res) => {
+  app.post('/tiresets', async (req, res) => {
+    // read the incoming customer data from the post request body
+    // we blindly trust the body structure to be correct always
+    const customer = req.body;
+
+    // insert the customer data into the database
+    const [rows, fields] = await connection.execute('INSERT INTO `tiresets` ()');
+
     res.send('Hello Tire World!')
   });
 
