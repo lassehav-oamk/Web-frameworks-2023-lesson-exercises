@@ -1,7 +1,18 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  const [tireSets, setTireSets] = useState([]);
+
+  useEffect( () => {
+    fetch('http://localhost:3001/tiresets')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        setTireSets(data);
+      });
+  }, []);
+
   return (
     <div>
       <h1>Tire Service App</h1>
@@ -14,16 +25,11 @@ function App() {
             <th>Tires in set</th>
           </thead>
           <tbody>
-            <tr>
-              <td>John Doe</td>
-              <td>ABC-123</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>Jane Doe</td>
-              <td>DEF-456</td>
-              <td>4</td>
-            </tr>
+            { tireSets.map(tireSet => (<tr>
+              <td>{tireSet.customerName}</td>
+              <td>{tireSet.registrationNumber}</td>
+              <td>{tireSet.tiresInSet}</td>
+            </tr>)) }            
           </tbody>
         </table>
       </div>
